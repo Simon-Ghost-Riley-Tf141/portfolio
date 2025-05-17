@@ -303,24 +303,92 @@ transparent;
 #details{
   display: flex;
   justify-content: center;
+  align-items: center;
   animation: slideright .5s ease forwards;
   animation-delay: calc(.1s * var(--i));
   opacity: 0;
-  flex-direction: column;
-  width: 50%;
-  height: 15rem;
- background-color:#0ea5e9;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 100vh;
+ /* background-color:#0ea5e9; */
   margin-top: 5rem;
   border-radius: 3rem;
-  color:#1f242d;
+  /* color:#1f242d; */
+  color: #0ea5e9;
   font-weight: bold;
   font-family:sans-serif;
 }
+.skill{
+  background-image: url(./image/skill.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 25rem;
+  height: 25rem;
+  margin-left: -7rem;
+}
+.skill img{
+  margin-top: 11rem;
+  margin-left: 13.7rem;
+}
+.skills{
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  
+  /* flex-direction: column; */
+  
+  margin: 5rem;
+}
+.skills div{
+  height: 12rem;
+  width: 7rem;
+  margin:1rem;
+  padding: 2rem;
+  background-color: #0ea5e9;
+  border-radius: 1rem;
+  color: #000;
+}
+.skills div h3{
+  color:#1f242d;
+  margin-top: -2rem;
+  margin-left: -1.5rem;
+  padding: 1rem;
+  /* opacity: 1; */
+}
+.skills div li{
+  /* color: red; */
+  padding: 0.3rem;
+  text-decoration: none;
+}
 
-#details h1{
+.nskills{
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-direction: column; */
+   /* margin: 5rem; */
+   margin-top: -5rem;
+
+}
+.nskills div{
+  height: 14rem;
+  width: 10rem;
+  margin:1rem;
+  padding: 2rem;
+  background-color: #0ea5e9;
+  color: #000;
+  border-radius: 1rem;
+}
+.nskills h3{
+  color: #1f242d;
+  padding: .2rem;
+}
+.block{
+  margin-top: -5rem;
+}
+
+#details h1{
+  
  
 }
 #details p{
@@ -334,24 +402,48 @@ transparent;
   animation: slideright .3s ease forwards;
   animation-delay: calc(.1s * var(--i));
   opacity: 0;
-  flex-direction: column;
-  width: 50%;
-  height: 15rem;
+  /* flex-direction: column; */
+  width: 100%;
+  height: 100vh;
  background-color:#0ea5e9;
   margin-top: 5rem;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   color:#1f242d;
   font-weight: bold;
   font-family:sans-serif;
 }
+#details1 p{
+      font-size: larger;
+}
+.slogo{
+  width: 40%;
+  height: 100vh;
+  color: #000;
+  background-image: url(./image/about.png);
+  opacity: 0.8;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 0px;
 
-#details1 h1{
+/* background-color: hsla(240, 100%, 50%, 0.5); 
+  width: 200px;
+  height: 200px;
+  opacity: 0.1;
+  color: #000; */
+
+}
+.content{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+
 #details1 p{
   margin: 3rem;
+  /* width: 120vh; */
+  width: 45rem;
   color: rgb(0, 0, 0);
 }
 #details2{
@@ -362,11 +454,11 @@ transparent;
   animation-delay: calc(.1s * var(--i));
   opacity: 0;
   flex-direction: column;
-  width: 50%;
-  height:auto;
+  width: 100%;
+  height: 100vh;
  background-color:#0ea5e9;
   margin-top: 5rem;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
   color:#1f242d;
   font-weight: bold;
   font-family:sans-serif;
@@ -387,15 +479,29 @@ transparent;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   
 }
 #project a{
   text-decoration: none;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.c1{
+  margin-left: -10rem;
+
 }
 
+#project a:hover{
+  background-color: #1f242d;
+}
 #project a img{
   height: 9rem;
   width: 15rem;
+  margin-left: 1rem;
 }
 .dnav{
   
@@ -405,25 +511,45 @@ transparent;
   align-items: center;
   flex-direction: column;
 }
-.skill{
+.skills{
   display: flex;
   align-self: center;
   justify-content: space-between;
+  /* color: #0ea5e9; */
    
    
+}
+.skills p{
+    color: #0ea5e9;
 }
 #skill {
   margin-bottom: -3rem;
 }
+#service{
+  /* margin-top: -10rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#service div{
+  display: flex;
+  justify-content: center;
+}
 #service img{
-  height: 4rem;
-  width: 4rem;
-  margin-left: 1rem;
+  height: 10rem;
+  width: 10rem;
+  /* margin-left: 1rem; */
   background: transparent;
   animation: slideup 3s ease forwards; 
     color: #0ef;
+    margin: 3rem 7rem ;
+}
 
-
+#service h2{
+  /* margin-top: 14rem; */
+  margin-left: -14rem;
+  margin-right: 5rem;
 }
 #service img:hover{
 
@@ -520,8 +646,9 @@ transparent;
   
   margin-top: 3rem;
   margin-bottom: 0;
-  background-color:#1f242d;
+  /* background-color:#1f242d; */
 
+  background-color: rgba(16, 123, 194, 0.637);
   height: 2rem;
   width: 100%;
 
